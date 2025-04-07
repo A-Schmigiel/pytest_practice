@@ -23,8 +23,9 @@ from lib.check_codeword import check_codeword
         ('steve', 'WRONG!'),
         (str(random.choice(string.ascii_lowercase) and not 'h') + (str(''.join(random.choice(string.ascii_lowercase)) for i in range(random.randint(1, 10)))), 'WRONG!'),
         ((str(''.join(random.choice(string.ascii_lowercase)) for i in range(random.randint(1, 10)))) + (str(random.choice(string.ascii_lowercase) and not 'e')), 'WRONG!'),
+        ('please?', 'WRONG!')
     ],
 )
 
 def test_check_codeword(codeword, expected_result):
-    assert check_codeword(codeword) == expected_result
+    assert check_codeword(codeword) == expected_result 
