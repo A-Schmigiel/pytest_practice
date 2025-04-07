@@ -1,6 +1,7 @@
 class Reminder:
     def __init__(self, name):
         self.name = name
+        self.task = None
 
     def remind_me_to(self, task):
         self.task = task
