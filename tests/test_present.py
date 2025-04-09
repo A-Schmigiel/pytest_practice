@@ -1,6 +1,8 @@
 from lib.present import *
 import pytest
 
+# test that each function works
+
 def test_present():
     new_present = Present()
     new_present.wrap('an avacado!')
